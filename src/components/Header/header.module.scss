@@ -3,9 +3,22 @@
     height: 220px;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 10px;
     img {
         width: 200px;
         height: 200px;
+    }
+    h3 {
+        width: 25%;
+        color: white;
+        font-family: 'Roboto Slab';
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h3 {
+        display: none;
     }
 }

@@ -48,3 +48,13 @@
         height: 300px;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .mysterium_card {
+        width: 50%;
+    }
+
+    .mysterium_image {
+        height: 500px;
+    }
+}

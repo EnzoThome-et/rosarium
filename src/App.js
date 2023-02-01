@@ -1,16 +1,21 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Mysteries from './components/Mysteries';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Gozosos from './pages/Gozosos';
+import Dolorosos from './pages/Dolorosos';
+import Gloriosos from './pages/Gloriosos';
+import Luminosos from './pages/Luminosos';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Mysteries />
-      <Footer />
-    </>
+    <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/misterios/gozosos' element={<Gozosos />} />
+      <Route path='/misterios/dolorosos' element={<Dolorosos />} />
+      <Route path='/misterios/gloriosos' element={<Gloriosos />} />
+      <Route path='/misterios/luminosos' element={<Luminosos />} />
+    </Routes>
   );
 }
 

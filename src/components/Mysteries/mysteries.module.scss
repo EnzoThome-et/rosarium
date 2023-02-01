@@ -1,0 +1,50 @@
+.mysterium_card {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    cursor: pointer;
+
+    i {
+        color: gray;
+    }
+}
+
+.card_title {
+    &:hover {
+        color: red;
+    }
+}
+
+.mysterium_image {
+    height: 500px;
+}
+
+@media screen and (min-width: 300px) {
+    .mysterium_card {
+        width: 100%;
+    }
+
+    .mysterium_image {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .mysterium_card {
+        width: 90%;
+    }
+
+    .mysterium_image {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mysterium_card {
+        width: 50%;
+    }
+
+    .mysterium_image {
+        height: 300px;
+    }
+}

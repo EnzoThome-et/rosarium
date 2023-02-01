@@ -3,18 +3,22 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import styles from './mysteries.module.scss';
-import dolorosos from '../../assets/dolorosos.jpg'
-import gozosos from '../../assets/gozosos.jpg'
-import luminosos from '../../assets/luminosos.jpg'
-import gloriosos from '../../assets/gloriosos.png'
+import dolorosos from '../../assets/dolorosos.jpg';
+import gozosos from '../../assets/gozosos.jpeg';
+import luminosos from '../../assets/luminosos.jpg';
+import gloriosos from '../../assets/gloriosos.jpg';
+import { useNavigate } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 
 
 export default function Mysteries() {
+  const navigate = useNavigate();
   return (
-    <section>
+    <>
       <Row xs={1} md={1} className={`${styles.mysterium_container}`}>
+      <Button variant="danger" size="lg" className='text-center'>Quero aprender a rezar o terço!</Button>{' '}
       <Col>
-            <Card className={styles.mysterium_card}>
+            <Card className={styles.mysterium_card} onClick={() => navigate('/misterios/gozosos')}>
               <Card.Img variant="top" src={gozosos} className={styles.mysterium_image} />
               <Card.Body>
                 <Card.Title className={styles.card_title}>Mistérios Gozosos</Card.Title>
@@ -26,7 +30,7 @@ export default function Mysteries() {
             </Card>
           </Col>
           <Col>
-            <Card className={styles.mysterium_card}>
+            <Card className={styles.mysterium_card}  onClick={() => navigate('/misterios/dolorosos')}>
               <Card.Img variant="top" src={dolorosos} className={styles.mysterium_image}/>
               <Card.Body>
                 <Card.Title className={styles.card_title}>Mistérios Dolorosos</Card.Title>
@@ -40,7 +44,7 @@ export default function Mysteries() {
             </Card>
           </Col>
           <Col>
-            <Card className={styles.mysterium_card}>
+            <Card className={styles.mysterium_card}  onClick={() => navigate('/misterios/gloriosos')}>
               <Card.Img variant="top" src={gloriosos} className={styles.mysterium_image}/>
               <Card.Body>
                 <Card.Title className={styles.card_title}>Mistérios Gloriosos</Card.Title>
@@ -54,7 +58,7 @@ export default function Mysteries() {
             </Card>
           </Col>
           <Col>
-            <Card className={styles.mysterium_card}>
+            <Card className={styles.mysterium_card}  onClick={() => navigate('/misterios/luminosos')}>
               <Card.Img variant="top" src={luminosos} className={styles.mysterium_image}/>
               <Card.Body>
                 <Card.Title className={styles.card_title}>Mistérios Luminosos</Card.Title>
@@ -68,6 +72,6 @@ export default function Mysteries() {
             </Card>
           </Col>
       </Row>
-    </section>
+    </>
   )
 }

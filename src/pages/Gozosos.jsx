@@ -1,17 +1,17 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../components/Header';
 import Carousel from 'react-bootstrap/Carousel';
-import credo from '../../assets/credo.jpg';
-import anunciacao from '../../assets/pageGozosos/anunciacao.jpg';
-import visitacao from '../../assets/pageGozosos/visitacao.jpg';
-import nascimento from '../../assets/pageGozosos/nascimento.jpg';
-import apresentacao from '../../assets/pageGozosos/apresentacao.jpg';
-import reencontro from '../../assets/pageGozosos/reencontro.jpg';
-import rainha from '../../assets/salve_rainha.jpg';
-import agradecimento from '../../assets/agradecimento.jpg'
-
-import styles from './Gozosos.module.scss'
-import Footer from '../../components/Footer';
+import credo from '../assets/credo.jpg';
+import oferecimento from '../assets/oferecimento.jpg';
+import anunciacao from '../assets/pageGozosos/anunciacao.jpg';
+import visitacao from '../assets/pageGozosos/visitacao.jpg';
+import nascimento from '../assets/pageGozosos/nascimento.jpg';
+import apresentacao from '../assets/pageGozosos/apresentacao.jpg';
+import reencontro from '../assets/pageGozosos/reencontro.jpg';
+import rainha from '../assets/salve_rainha.jpg';
+import agradecimento from '../assets/agradecimento.jpg'
+import styles from './slides.module.scss';
+import Footer from '../components/Footer';
 
 export default function Gozosos() {
   return (
@@ -20,11 +20,11 @@ export default function Gozosos() {
       <Carousel fade>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img 
-          className="d-block w-100"
-          src={credo}
+
+          src={oferecimento}
           alt="First slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className={`${styles.generic_div} ${styles.oferecimento}`}>
           <p>Pelo sinal da Santa Cruz, livrai-nos Deus, Nosso Senhor, dos nossos inimigos.</p>
           <p> Em nome do pai, do Filho e do Espírito Santo, amém.</p>
           <p>Divino Jesus, eu vos ofereço este terço que vou rezar, contemplando os mistérios da vossa redenção.</p>
@@ -34,12 +34,26 @@ export default function Gozosos() {
       </Carousel.Item>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img 
-          className="d-block w-100"
+
+          src={credo}
+          alt="First slide"
+        />
+        <Carousel.Caption className={styles.generic_div}>
+          <p>Creio em Deus pai todo poderoso, criador do céu e da terra, e em Jesus cristo seu único filho, nosso senhor</p>
+          <p>que foi concebido, pelo poder do Espírito Santo, nasceu da virgem Maria, padeceu sob pôncio Pilatos,</p>
+          <p>foi crucificado, morto e sepultado, desceu a mansão dos mortos, ressuscitou ao terceiro dia subiu aos céus</p>
+          <p>e está sentado a direita de Deus pai todo poderoso donde há de vir e julgar os vivos e os mortos.</p>
+          <p>Creio no Espírito santo, na Santa igreja Católica, na comunhão dos santos,</p>
+          <p>na remissão dos pecados na ressurreição da carne e na vida eterna. Amém.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={600000} className={styles.slide}>
+        <img
           src={anunciacao}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>1 - A Anunciação do Anjo</h3>
+        <Carousel.Caption className={styles.caption}>
+          <h3>1 - Anunciação do Anjo a Nossa Senhora</h3>
           <p>Pai Nosso...</p>
           <p>1. Gabriel foi enviado por Deus. Ave Maria...</p>
           <p>2. A uma Virgem prometida em casamento. Ave Maria...</p>
@@ -51,17 +65,19 @@ export default function Gozosos() {
           <p>8. Maria perguntou: como se dará isso? Ave Maria...</p>
           <p>9. O Espírito Santo virá sobre ti. Ave Maria...</p>
           <p>10. Eis aqui a Serva do Senhor. Ave Maria...</p>
+          <p>Glória ao Pai...</p>
+          <p>Ó meu Jesus...</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img
-          className="d-block w-100"
+
           src={visitacao}
           alt="Second slide"
         />
 
        <Carousel.Caption>
-          <h3>2- Visitação de Nossa Senhora</h3>
+          <h3>2 - Visitação de Nossa Senhora</h3>
           <p>Pai Nosso...</p>
           <p>1. Maria partiu para a região montanhosa. Ave Maria...</p>
           <p>2. Entrou na casa de Zacarias. Ave Maria...</p>
@@ -73,11 +89,13 @@ export default function Gozosos() {
           <p>8. Bem aventurada aquela que acreditou. Ave Maria...</p>
           <p>9. Porque se cumprirá o que o Senhor prometeu. Ave Maria...</p>
           <p>10. Minha alma glorifica ao Senhor. Ave Maria...</p>
+          <p>Glória ao Pai...</p>
+          <p>Ó meu Jesus...</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img
-          className="d-block w-100"
+
           src={nascimento}
           alt="Third slide"
         />
@@ -95,11 +113,13 @@ export default function Gozosos() {
           <p>8. Encontraram o Menino com Maria. Ave Maria...</p>
           <p>9. Ofertaram outro, incenso e mirra. Ave Maria...</p>
           <p>10. E voltaram por outro caminho. Ave Maria...</p>
+          <p>Glória ao Pai...</p>
+          <p>Ó meu Jesus...</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img
-          className="d-block w-100"
+
           src={apresentacao}
           alt="Third slide"
         />
@@ -117,11 +137,13 @@ export default function Gozosos() {
           <p>8. Uma espada transpassará a tua alma. Ave Maria...</p>
           <p>9. A profetiza Ana louvava a Deus. Ave Maria...</p>
           <p>10. Ele crescia em sabedoria, idade e graça. Ave Maria...</p>
+          <p>Glória ao Pai...</p>
+          <p>Ó meu Jesus...</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img
-          className="d-block w-100"
+
           src={reencontro}
           alt="Third slide"
         />
@@ -139,16 +161,18 @@ export default function Gozosos() {
           <p>8. Meu filho, estávamos a tua procura. Ave Maria...</p>
           <p>9. Devo estar na casa do meu Pai. Ave Maria...</p>
           <p>10. Maria meditava tudo no coração. Ave Maria...</p>
+          <p>Glória ao Pai...</p>
+          <p>Ó meu Jesus...</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img
-          className="d-block w-100"
+
           src={rainha}
           alt="Third slide"
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className={`${styles.generic_div} ${styles.gracas}`}>
           <p>Infinitas graças vos damos, Soberana Rainha, pelos benefícios que recebemos todos os dias de vossas mãos liberais.</p>
           <p>Dignai-vos agora e para sempre, tomar-vos debaixo de vosso poderoso amparo.</p>
           <p>E para mais vos obrigar, vos saudamos com a Salve Rainha.</p>
@@ -156,12 +180,11 @@ export default function Gozosos() {
       </Carousel.Item>
       <Carousel.Item interval={600000} className={styles.slide}>
         <img
-          className="d-block w-100"
           src={agradecimento}
           alt="Third slide"
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className={styles.generic_div}>
         <h3>Salve Rainha</h3>
           <p>Salve, Rainha, mãe de misericórdia, vida, doçura, esperança nossa, salve! </p>
           <p>A Vós bradamos, os degredados filhos de Eva. </p>

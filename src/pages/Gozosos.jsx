@@ -9,7 +9,7 @@ import nascimento from '../assets/pageGozosos/nascimento.jpg';
 import apresentacao from '../assets/pageGozosos/apresentacao.jpg';
 import reencontro from '../assets/pageGozosos/reencontro.jpg';
 import rainha from '../assets/salve_rainha.jpg';
-import agradecimento from '../assets/agradecimento.jpg'
+import agradecimento from '../assets/agradecimento.jpg';
 import styles from './slides.module.scss';
 import Footer from '../components/Footer';
 

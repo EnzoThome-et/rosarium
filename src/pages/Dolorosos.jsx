@@ -10,8 +10,8 @@ import flagelacao from '../assets/pageDolorosos/flagelacao.jpg';
 import coroacao from '../assets/pageDolorosos/coroacao.jpg';
 import carregamento from '../assets/pageDolorosos/carregamento.jpg';
 import morte from '../assets/pageDolorosos/morte.jpg';
-import aparecida from '../assets/aparecida.jpg';
-import agradecimento from '../assets/agradecimento.jpg'
+import agradecimento from '../assets/agradecimento.jpg';
+import rainha from '../assets/salve_rainha.jpg';
 
 export default function Dolorosos() {
   return (
@@ -168,7 +168,7 @@ export default function Dolorosos() {
       <Carousel.Item interval={600000} className={styles.slide}>
         <img
 
-          src={aparecida}
+          src={rainha}
           alt="Third slide"
         />
 
